@@ -1,75 +1,137 @@
-# React + TypeScript + Vite
+Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built with React, TypeScript, and Vite. The website presents my professional profile, technical skills, projects, and contact information in a clean and user-friendly interface.
 
-Currently, two official plugins are available:
+About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio was created to showcase my journey as a software developer and provide an overview of my technical skills and projects.
 
-## React Compiler
+The website includes sections for:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Home – Introduction and personal profile
+- About – Background and professional information
+- Skills – Programming languages, frameworks, and technologies
+- Projects – Selected software development projects
+- Contact – Ways to get in touch
 
-## Expanding the ESLint configuration
+Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
+- HTML5
+- CSS3
+- JavaScript
+- ESLint
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Responsive design
+- Modern user interface
+- Component-based React architecture
+- TypeScript for type safety
+- Fast development and build process with Vite
+- Organized and reusable components
+- Mobile-friendly layout
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Project Structure
 
-```
+my-portfolio/
+├── public/
+│   ├── favicon.svg
+│   ├── icons.svg
+│   └── profile.png
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Projects.tsx
+│   │   └── Skills.tsx
+│   │
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Make sure you have Node.js and npm installed.
 
-```
+Installation
+
+Clone the repository:
+
+git clone https://github.com/yonafamsalu-a11y/my-portfolio.git
+
+Move into the project directory:
+
+cd my-portfolio
+
+Install dependencies:
+
+npm install
+
+Run the Development Server
+
+npm run dev
+
+The application will be available at the local address provided by Vite, usually:
+
+http://localhost:5173
+
+Build for Production
+
+To create a production build:
+
+npm run build
+
+To preview the production build:
+
+npm run preview
+
+Linting
+
+Run ESLint with:
+
+npm run lint
+
+Purpose
+
+This project serves as my personal developer portfolio and demonstrates my experience with modern frontend development, React component architecture, TypeScript, responsive design, and web development tools.
+
+Future Improvements
+
+Planned improvements may include:
+
+- Adding more projects
+- Improving animations and interactions
+- Adding a downloadable CV
+- Adding a dark/light theme
+- Improving accessibility
+- Adding additional portfolio sections
+- Deploying the portfolio online
+
+Author
+
+Yonaf Amsalu
+
+Software Developer / Computer Science Student
+
+GitHub: yonafamsalu-a11y
+
+License
+
+This project is available for educational and personal portfolio purposes.
